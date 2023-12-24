@@ -15,7 +15,7 @@ const Sidebar = () => {
           <Link to="/">
             <HomeIcon />
           </Link>
-          <div className='hidden absolute text-xs rounded-lg text-white bg-black left-[35px] group-hover:block px-4 py-1'>
+          <div className='hidden absolute text-xs rounded-lg text-white bg-[#444] left-[35px] group-hover:block px-4 py-1'>
             <span>Home</span>
           </div>
         </div>
@@ -26,7 +26,7 @@ const Sidebar = () => {
               <SearchIcon />
             </span>
           </Link>
-          <div className='hidden absolute w-max text-xs rounded-lg text-white bg-black left-[35px] group-hover:block px-4 py-1'>
+          <div className='hidden absolute w-max text-xs rounded-lg text-white bg-[#444] left-[35px] group-hover:block px-4 py-1'>
             <span>Company Search</span>
           </div>
         </div>
@@ -37,7 +37,7 @@ const Sidebar = () => {
               <SearchIcon />
             </span>
           </Link>
-          <div className='hidden absolute w-max text-xs rounded-lg text-white bg-black left-[35px] group-hover:block px-4 py-1'>
+          <div className='hidden absolute w-max text-xs rounded-lg text-white bg-[#444] left-[35px] group-hover:block px-4 py-1'>
             <span>Contact Search</span>
           </div>
         </div>

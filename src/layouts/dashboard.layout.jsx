@@ -7,9 +7,9 @@ const Dashboard = () => {
   return (
     <div className='flex min-h-dvh max-h-dvh'>
       <Sidebar />
-      <div className='w-full min-h-dvh max-h-dvh overflow-y-scroll bg-[#f6f6f6bb] relative'>
+      <div className='w-full min-h-dvh max-h-dvh bg-[#f6f6f6bb] relative flex flex-col'>
         <Nav />
-        <div className='p-7 h-full pt-[90px]'>
+        <div className='px-3 md:px-7 flex-1 pt-[90px] overflow-y-scroll'>
           <Outlet />
         </div>
       </div>
