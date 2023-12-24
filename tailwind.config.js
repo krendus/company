@@ -8,7 +8,8 @@ module.exports = {
       'primary': '#6D23FF',
       'dark-gray': '#3D4049',
       'light-gray': '#71757D',
-      'black':'#1a1a1a'
+      'black':'#1a1a1a',
+      'white':'#fff' 
     },
     extend: {
       boxShadow: {

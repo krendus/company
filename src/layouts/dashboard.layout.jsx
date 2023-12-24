@@ -5,11 +5,11 @@ import Nav from '../components/nav'
 
 const Dashboard = () => {
   return (
-    <div>
+    <div className='flex min-h-dvh max-h-dvh'>
       <Sidebar />
-      <div>
+      <div className='w-full min-h-dvh max-h-dvh overflow-y-scroll bg-[#f6f6f6bb] relative'>
         <Nav />
-        <div>
+        <div className='p-7 h-full pt-[90px]'>
           <Outlet />
         </div>
       </div>
