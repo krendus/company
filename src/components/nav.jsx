@@ -1,6 +1,6 @@
 import React from 'react'
 import { BellIcon, NavUserIcon } from '../assets/icons'
-import { useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Nav = () => {
   const location = useLocation();
@@ -29,12 +29,17 @@ const Nav = () => {
           </div>
         </div>
         <div className='flex py-2 px-4 gap-x-5 items-center'>
-          <button className='text-light-gray hover:text-primary'>
-            <BellIcon />
-          </button>
-          <button className='text-light-gray hover:text-primary'>
+          <div className='group flex items-center'>
+            <button className='text-light-gray hover:text-primary'>
+              <BellIcon />
+            </button>
+            <div className='group-hover:flex'>
+
+            </div>
+          </div>
+          <Link to={"/profile"} className='text-light-gray hover:text-primary'>
             <NavUserIcon />
-          </button>
+          </Link>
         </div>
       </div>
     </div>
