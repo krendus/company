@@ -9,7 +9,7 @@ const Dashboard = () => {
       <Sidebar />
       <div className='w-full min-h-dvh max-h-dvh bg-[#f6f6f6bb] relative flex flex-col'>
         <Nav />
-        <div className='px-3 md:px-7 flex-1 pt-[90px] overflow-y-scroll'>
+        <div className='px-3 md:px-7 flex-1 pt-[90px] pb-8 overflow-y-scroll'>
           <Outlet />
         </div>
       </div>
