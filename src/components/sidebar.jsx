@@ -11,7 +11,7 @@ const Sidebar = () => {
         <img src={logo} alt="logo" className='h-[28px] w-[32px]' />
       </div>
       <div className='mt-[24px] flex flex-col items-center gap-y-4'>
-        <div className={`${location.pathname === "/" && "text-primary"} group w-full flex text-light-gray size-[24px] items-center justify-center hover:text-black relative`}>
+        <div className={`${location.pathname === "/" && "text-primary"} md:group w-full flex text-light-gray size-[24px] items-center justify-center md:hover:text-black relative`}>
           <Link to="/">
             <HomeIcon />
           </Link>
@@ -19,7 +19,7 @@ const Sidebar = () => {
             <span>Home</span>
           </div>
         </div>
-        <div className={`${location.pathname.includes("/companies") && "text-primary"} group w-full flex text-light-gray size-[24px] items-center justify-center hover:text-black relative`}>
+        <div className={`${location.pathname.includes("/companies") && "text-primary"} md:group w-full flex text-light-gray size-[24px] items-center justify-center md:hover:text-black relative`}>
           <Link to="/companies">
             <CompanyIcon />
             <span className='absolute -bottom-1 -right-1 block bg-white rounded-lg'>
@@ -30,7 +30,7 @@ const Sidebar = () => {
             <span>Company Search</span>
           </div>
         </div>
-        <div className={`${location.pathname.includes("/contacts") && "text-primary"} group w-full flex text-light-gray size-[24px] items-center justify-center hover:text-black relative`}>
+        <div className={`${location.pathname.includes("/contacts") && "text-primary"} md:group w-full flex text-light-gray size-[24px] items-center justify-center md:hover:text-black relative`}>
           <Link to="/contacts">
             <UserIcon />
             <span className='absolute -bottom-1 -right-1 block bg-white rounded-lg'>
