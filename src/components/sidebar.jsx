@@ -6,7 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 const Sidebar = () => {
   const location = useLocation();
   return (
-    <div className='w-[62px] bg-white py-[20px] flex flex-col items-center shadow z-40'>
+    <div className='w-[62px] min-w-[62px] bg-white py-[20px] flex flex-col items-center shadow z-40'>
       <div>
         <img src={logo} alt="logo" className='h-[28px] w-[32px]' />
       </div>
