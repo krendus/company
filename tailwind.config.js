@@ -17,6 +17,9 @@ module.exports = {
         'inset': 'inset 0 -1px 0 0 #F3F5F8',
         'modal': '-8px 2px 15px 0px rgba(15, 21, 23, 0.28)',
         'box': ' 0px 4px 4px 0px rgba(0, 0, 0, 0.07)'
+      },
+      fontFamily: {
+        'roboto': ['"Roboto"', 'sans-serif']
       }
     },
   },
