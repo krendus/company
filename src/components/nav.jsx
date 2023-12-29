@@ -12,7 +12,7 @@ const Nav = () => {
           location.pathname === "/" && ("Home")
         }
         {
-          location.pathname.match(/\/companies\/?/) && ("Company Search")
+          ((location.pathname === "/companies") || (location.pathname === "/companies/"))  && ("Company Search")
         }
         {
           location.pathname.match(/\/profile\/?/) && ("Profile")

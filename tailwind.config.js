@@ -19,7 +19,8 @@ module.exports = {
         'box': ' 0px 4px 4px 0px rgba(0, 0, 0, 0.07)'
       },
       fontFamily: {
-        'roboto': ['"Roboto"', 'sans-serif']
+        'roboto': ['"Roboto"', 'sans-serif'],
+        'dmsans': ['"DM Sans"', 'sans-serif']
       }
     },
   },
