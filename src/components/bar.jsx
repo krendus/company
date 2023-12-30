@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-const Bar = ({value, max}) => {
+const Bar = ({value, max, title}) => {
   const [color, setColor] = useState("");
   const [heightPercentage, setHeightPercentage] = useState(0);
   useEffect(() => {
@@ -18,7 +18,7 @@ const Bar = ({value, max}) => {
   }, [max, value])
   
   return (
-    <div className={`w-[calc((100%-30px)/7)] rounded-lg text-xs pt-1 text-white text-center`} style={{ background: color, height: heightPercentage + "%" }}><span>{value}</span></div>
+    <div className={`w-[calc((100%-30px)/7)] rounded-lg text-xs pt-1 text-white text-center`} style={{ background: color, height: heightPercentage + "%" }} title={title}><span>{value}</span></div>
   )
 }
 

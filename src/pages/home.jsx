@@ -40,13 +40,13 @@ const Home = () => {
                       <div className='h-1/4 border-t border-[#ddd]'></div>
                     </div>
                     <div className='absolute w-full h-full left-0 top-0 flex gap-x-[6px] items-end'>
-                      <Bar value={45} max={80}/>
-                      <Bar value={22} max={80}/>
-                      <Bar value={64} max={80}/>
-                      <Bar value={85} max={80}/>
-                      <Bar value={33} max={80}/>
-                      <Bar value={40} max={80}/>
-                      <Bar value={42} max={80}/>
+                      <Bar value={45} max={80} title={"Industry name"}/>
+                      <Bar value={22} max={80} title={"Industry name"}/>
+                      <Bar value={64} max={80} title={"Industry name"}/>
+                      <Bar value={85} max={80} title={"Industry name"}/>
+                      <Bar value={33} max={80} title={"Industry name"}/>
+                      <Bar value={40} max={80} title={"Industry name"}/>
+                      <Bar value={42} max={80} title={"Industry name"}/>
                     </div>
                   </div>
                 </div>
