@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { BellIcon, NavUserIcon } from '../assets/icons'
 import { Link, useLocation } from 'react-router-dom';
 import ActivityCard from './activity-card';
 
 const Nav = () => {
-  const location = useLocation();
+  const location = useLocation()
+  const [showNotification, setShowNotification] = useState(false);
   return (
     <div className='h-[60px] px-3 md:px-6 py-3 w-full bg-white shadow items-center justify-between flex z-30 absolute top-0 left-0'>
       <h1 className='text-base text-dark-gray'>
@@ -33,20 +34,24 @@ const Nav = () => {
           </div>
         </div>
         <div className='flex px-2 gap-x-2 md:gap-x-5 items-center'>
-          <div className='group flex items-center relative'>
-            <button className='text-light-gray hover:text-primary p-2'>
+          <div className='flex items-center relative'>
+            <button className='text-light-gray hover:text-primary p-2' onClick={() => setShowNotification(!showNotification)}>
               <BellIcon />
             </button>
-            <div className='hidden group-hover:flex flex-col gap-y-5 min-h-[300px] max-h-[300px] absolute -right-14 md:right-0 top-[40px] w-[300px] md:w-[400px] p-5 rounded-lg bg-white shadow-modal z-50'>
-              <ActivityCard 
-                content={"Your recent notification is completed."}
-                date={"Sep 04th, 2023"}
-              />
-              <ActivityCard 
-                content={"Your recent notification is completed."}
-                date={"Sep 04th, 2023"}
-              />
-            </div>
+            {
+              showNotification && (
+                <div className='flex flex-col gap-y-5 min-h-[300px] max-h-[300px] absolute -right-14 md:right-0 top-[40px] w-[300px] md:w-[400px] p-5 rounded-lg bg-white shadow-modal z-50'>
+                  <ActivityCard 
+                    content={"Your recent notification is completed."}
+                    date={"Sep 04th, 2023"}
+                  />
+                  <ActivityCard 
+                    content={"Your recent notification is completed."}
+                    date={"Sep 04th, 2023"}
+                  />
+                </div>
+              )
+            }
           </div>
           <Link to={"/profile"} className='text-light-gray hover:text-primary py-2'>
             <NavUserIcon />

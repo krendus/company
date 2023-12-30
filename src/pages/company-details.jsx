@@ -108,17 +108,11 @@ const CompanyDetails = () => {
                       <ChevDownIcon />
                     </button>
                   </th>
-                  <th className='flex items-center font-medium px-[10px] border-r border-[#F3F5F8] text-sm flex-1 min-w-[200px] justify-between'>
+                  <th className='flex items-center font-medium px-[10px] border-r border-[#F3F5F8] text-sm flex-1 max-w-[170px] min-w-[170px] justify-between'>
                     <p className='text-[#151619]'>Phone</p>
-                    <button className='size-[20px] bg-[#F7F7FC] items-center justify-center inline-flex rounded-[5px]'>
-                      <ChevDownIcon />
-                    </button>
                   </th>
-                  <th className='flex items-center font-medium px-[10px] border-r border-[#F3F5F8] text-sm flex-1 min-w-[200px] justify-between'>
+                  <th className='flex items-center font-medium px-[10px] border-r border-[#F3F5F8] text-sm flex-1 min-w-[170px] justify-between'>
                     <p className='text-[#151619]'>Email</p>
-                    <button className='size-[20px] bg-[#F7F7FC] items-center justify-center inline-flex rounded-[5px]'>
-                      <ChevDownIcon />
-                    </button>
                   </th>
                   <th className='flex items-center font-medium px-[10px] border-r border-[#F3F5F8] text-sm flex-1 min-w-[200px] justify-between'>
                     <p className='text-[#151619]'>Location</p>
@@ -127,10 +121,7 @@ const CompanyDetails = () => {
                     </button>
                   </th>
                   <th className='flex items-center font-medium px-[10px] text-sm flex-1 max-w-[120px] min-w-[120px] justify-between'>
-                    <p className='text-[#151619]'>Actions</p>
-                    <button className='size-[20px] bg-[#F7F7FC] items-center justify-center inline-flex rounded-[5px]'>
-                      <ChevDownIcon />
-                    </button>
+                    <p className='text-[#151619] text-center w-full'>Actions</p>
                   </th>
                 </tr>
               </thead>
@@ -148,10 +139,10 @@ const CompanyDetails = () => {
                       <td className='flex items-center px-[10px] text-xs flex-1 min-w-[200px]'>
                         <p className='text-[#3D4049]'>Estimating Manager</p>
                       </td>
-                      <td className='flex items-center px-[10px] text-xs flex-1 min-w-[200px]'>
+                      <td className='flex items-center px-[10px] text-xs flex-1 max-w-[170px] min-w-[170px]'>
                         <p className='text-[#24075C]'>Unlock Mobile</p>
                       </td>
-                      <td className='flex items-center px-[10px] text-xs flex-1 min-w-[200px]'>
+                      <td className='flex items-center px-[10px] text-xs flex-1 min-w-[170px]'>
                         <p className='text-[#24075C]'>Unlock</p>
                       </td>
                       <td className='flex items-center px-[10px] text-xs flex-1 min-w-[200px]'>
@@ -167,7 +158,7 @@ const CompanyDetails = () => {
             </table>
           </div>
           <div className='flex flex-col gap-y-3 items-start lg:flex-row justify-between lg:items-center py-3'>
-            <button className={`h-8 px-4 rounded ${selectedList.length > 0 ? "bg-primary" : "bg-[#E2E2E2]"} text-sm font-roboto font-medium text-white`}>Export Selected</button>
+            <button className={`h-8 px-4 rounded ${selectedList.length > 0 ? "bg-primary" : "bg-[#E2E2E2]"} text-sm font-roboto font-medium text-white`}>Export Selected {(selectedList.length > 0) && (`(${selectedList.length})`)}</button>
             <div className='flex gap-x-4'> 
               <div className='flex gap-x-2'>
                 <button className='text-[#0E1445] font-dmsans'>1</button>
@@ -180,7 +171,7 @@ const CompanyDetails = () => {
               <div className='flex gap-x-2 items-center text-sm font-dmsans'>
                 <p className='font-dmsans rounded-sm'>Showing</p>
                 <input type="text" placeholder='10' className='border border-[#D9DBE6] w-12 h-7 px-2 outline-none font-dmsans' />
-                <p className='font-dmsans'>of 1205 results</p>
+                <p className='font-dmsans'>of 125 results</p>
               </div>
             </div>
           </div>
