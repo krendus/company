@@ -17,15 +17,15 @@ const Profile = () => {
               <div className='flex gap-x-3 flex-wrap'>
                 <div className='flex-1 min-w-[150px]'>
                   <label className='text-xs font-semibold pb-1 font-roboto'>First Name</label>
-                  <input type="text" className=' font-roboto w-full border border-[#CACACC] rounded h-[30px]' />
+                  <input type="text" className='px-3 font-roboto w-full border border-[#CACACC] rounded h-[30px]' />
                 </div>
                 <div className='flex-1 min-w-[150px]'>
                   <label className='text-xs font-semibold pb-1 font-roboto'>Last Name</label>
-                  <input type="text" className='font-roboto w-full border border-[#CACACC] rounded h-[30px]' />
+                  <input type="text" className='px-3 font-roboto w-full border border-[#CACACC] rounded h-[30px]' />
                 </div>
                 <div className='flex-1 min-w-[150px]'>
                   <label className='text-xs font-semibold pb-1 font-roboto'>Title</label>
-                  <input type="text" className='w-full border border-[#CACACC] rounded h-[30px] font-roboto' />
+                  <input type="text" className='px-3 w-full border border-[#CACACC] rounded h-[30px] font-roboto' />
                 </div>
               </div>
               <div className='my-3 gap-y-3 flex justify-between md:items-center flex-col md:flex-row'>

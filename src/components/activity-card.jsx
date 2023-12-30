@@ -3,7 +3,7 @@ import documentIcon from '../assets/document.svg'
 
 const ActivityCard = ({ content, date }) => {
   return (
-    <div className='flex items-center gap-x-5'>
+    <div className='flex gap-x-5'>
         <div className='min-w-[26px]'>
             <img src={documentIcon} alt="document" /> 
         </div>
