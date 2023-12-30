@@ -37,7 +37,7 @@ const CompanyDetails = () => {
     <div className='max-w-full'>
       <div className='flex gap-3 flex-col md:flex-row'>
         <div className='font-medium h-max w-full md:max-w-[550px] md:min-w-[550px] p-5 bg-white border border-[#EEEEEF] rounded-md'>
-          <div className='flex gap-x-[17px] mb-5'>
+          <div className='flex flex-col md:flex-row gap-[17px] mb-5'>
             <img src={companyImg} alt="company img" className='size-[80px]' />
             <div>
               <h3 className='text-dark-gray text-base font-semibold'>Northeast Agri Systems Inc</h3>
@@ -45,13 +45,13 @@ const CompanyDetails = () => {
             </div>
           </div>
           <p className='text-primary text-sm font-medium'>Contacts Available: 19</p>
-          <div className='flex gap-x-3 mt-2'>
+          <div className='flex flex-col gap-y-[10px] sm:flex-row gap-x-3 mt-2'>
             <button className='h-8 px-5 rounded bg-primary text-sm font-roboto font-medium text-white'>Save Contacts Available</button>
             <button className='h-8 px-5 rounded bg-primary text-sm font-roboto font-medium text-white'>Save Company</button>
           </div>
           <div className='mt-6 pt-6 border-t border-[#DEE0E6]'>
             <h3 className='uppercase text-sm text-dark-gray'>Details</h3>
-            <div className='my-5 flex'>
+            <div className='my-5 flex flex-col sm:flex-row gap-y-2'>
               <div className='flex gap-x-3 items-center flex-1'>
                 <PhoneIcon />
                 <a href="tel:+1(717) 569-2702" className='text-sm text-[#6D23FF]'>(717) 569-2702</a>
@@ -62,27 +62,27 @@ const CompanyDetails = () => {
               </div>
             </div>
             <div className='flex flex-col gap-y-3'>
-              <div className='flex text-sm gap-x-2'>
+              <div className='flex text-sm gap-x-2 flex-col sm:flex-row gap-y-2'>
                 <p className='flex-1 overflow-hidden whitespace-nowrap text-ellipsis font-normal text-light-gray'><span className='text-dark-gray font-medium'>Industry Tags:</span> Agricultural Product of</p>
                 <p className='flex-1 overflow-hidden whitespace-nowrap text-ellipsis font-normal text-light-gray'><span className='text-dark-gray font-medium'>Type:</span> Private</p>
               </div>
-              <div className='flex text-sm gap-x-2'>
+              <div className='flex text-sm gap-x-2 flex-col sm:flex-row gap-y-2'>
                 <p className='flex-1 overflow-hidden whitespace-nowrap text-ellipsis font-normal text-light-gray'><span className='text-dark-gray font-medium'>SIC Code:</span> 02</p>
                 <p className='flex-1 overflow-hidden whitespace-nowrap text-ellipsis font-normal text-light-gray'><span className='text-dark-gray font-medium'>SIC6 Code:</span> 508303</p>
               </div>
-              <div className='flex text-sm gap-x-2'>
+              <div className='flex text-sm gap-x-2 flex-col sm:flex-row gap-y-2'>
                 <p className='flex-1 overflow-hidden whitespace-nowrap text-ellipsis font-normal text-light-gray'><span className='text-dark-gray font-medium'>Ticker:</span> -</p>
                 <p className='flex-1 overflow-hidden whitespace-nowrap text-ellipsis font-normal text-light-gray'><span className='text-dark-gray font-medium'>NAICS Code:</span> 1123</p>
               </div>
-              <div className='flex text-sm gap-x-2'>
+              <div className='flex text-sm gap-x-2 flex-col sm:flex-row gap-y-2'>
                 <p className='flex-1 overflow-hidden whitespace-nowrap text-ellipsis font-normal text-light-gray'><span className='text-dark-gray font-medium'>Revenue:</span> $1M-$10M</p>
                 <p className='flex-1 overflow-hidden whitespace-nowrap text-ellipsis font-normal text-light-gray'><span className='text-dark-gray font-medium'>Fortune Ranking:</span> -</p>
               </div>
-              <div className='flex text-sm gap-x-2'>
+              <div className='flex text-sm gap-x-2 flex-col sm:flex-row gap-y-2'>
                 <p className='flex-1 overflow-hidden whitespace-nowrap text-ellipsis font-normal text-light-gray'><span className='text-dark-gray font-medium'>Employees:</span> 11-50</p>
                 <p className='flex-1 overflow-hidden whitespace-nowrap text-ellipsis font-normal text-light-gray'><span className='text-dark-gray font-medium'>Year Founded:</span> 1982</p>
               </div>
-              <div className='flex text-sm gap-x-2'>
+              <div className='flex text-sm gap-x-2 flex-col sm:flex-row gap-y-2'>
                 <p className='flex-1 overflow-hidden whitespace-nowrap text-ellipsis font-normal text-light-gray'><span className='text-dark-gray font-medium'>Total Funding:</span> -</p>
               </div>
             </div>
